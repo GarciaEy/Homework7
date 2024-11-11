@@ -1,0 +1,121 @@
+@font-face {
+  font-family: Caveat-Regular;
+  src: url(/assets/fonts/Caveat-Regular.ttf);
+}
+
+header {
+  background: transparent;
+  color: black;
+  padding: 0.5rem 0;
+  font-family: Caveat-Regular;
+  z-index: -1;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1.6rem;
+    font-size: 25px;
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .nav {
+      display: flex;
+
+      ul {
+        list-style: none;
+      }
+
+      .nav--ul__one {
+        margin: 0 auto;
+        display: flex;
+        gap: 1.6rem;
+        font-size: 25px;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 5px;
+
+        a {
+          text-decoration: none;
+          color: black;
+          z-index: 0;
+        }
+
+        #home {
+          text-decoration: underline;
+        }
+      }
+
+      .nav--ul__two {
+        display: flex;
+        gap: 1.6rem;
+        font-size: 25px;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+
+      .container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -2;
+      }
+    }
+
+    .hamburger-menu {
+      display: none;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-container {
+    .logo {
+      font-size: 1.2rem;
+      z-index: 2;
+    }
+
+    .nav {
+      flex-direction: column;
+      gap: 2rem;
+      position: absolute;
+      top: 0;
+      right: -100%;
+      bottom: 0;
+      width: 100%;
+      padding-top: 6rem;
+      align-items: center;
+      text-align: center;
+      background-color: cornflowerblue;
+      color: black;
+      transition: 0.3s ease-in-out;
+
+      &.active {
+        right: 0;
+      }
+
+      .nav--ul__one,
+      .nav--ul__two {
+        flex-direction: column;
+        gap: 0.6rem;
+        z-index: 2;
+      }
+    }
+
+    .hamburger-menu {
+      display: block;
+      z-index: 2;
+    }
+  }
+}

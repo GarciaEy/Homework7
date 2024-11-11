@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-image: linear-gradient(rgba(242, 92, 84, 0.7), rgba(242, 92, 84, 0.7)), url(/assets/images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Caveat-Regular;
+  src: url(/assets/fonts/Caveat-Regular.ttf);
+}
+header {
+  background: transparent;
+  color: black;
+  padding: 0.5rem 0;
+  font-family: Caveat-Regular;
+  z-index: -1;
+}
+header .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  gap: 1.6rem;
+  font-size: 25px;
+}
+header .nav-container .logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+header .nav-container .nav {
+  display: flex;
+}
+header .nav-container .nav ul {
+  list-style: none;
+}
+header .nav-container .nav .nav--ul__one {
+  margin: 0 auto;
+  display: flex;
+  gap: 1.6rem;
+  font-size: 25px;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 5px;
+}
+header .nav-container .nav .nav--ul__one a {
+  text-decoration: none;
+  color: black;
+  z-index: 0;
+}
+header .nav-container .nav .nav--ul__one #home {
+  text-decoration: underline;
+}
+header .nav-container .nav .nav--ul__two {
+  display: flex;
+  gap: 1.6rem;
+  font-size: 25px;
+}
+header .nav-container .nav .nav--ul__two a {
+  text-decoration: none;
+  color: black;
+}
+header .nav-container .nav .container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+header .nav-container .hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .nav-container .logo {
+    font-size: 1.2rem;
+    z-index: 2;
+  }
+  .nav-container .nav {
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    padding-top: 6rem;
+    align-items: center;
+    text-align: center;
+    background-color: cornflowerblue;
+    color: black;
+    transition: 0.3s ease-in-out;
+  }
+  .nav-container .nav.active {
+    right: 0;
+  }
+  .nav-container .nav .nav--ul__one,
+  .nav-container .nav .nav--ul__two {
+    flex-direction: column;
+    gap: 0.6rem;
+    z-index: 2;
+  }
+  .nav-container .hamburger-menu {
+    display: block;
+    z-index: 2;
+  }
+}
+@font-face {
+  font-family: Caveat-Bold;
+  src: url(/assets/fonts/Caveat-Bold.ttf);
+}
+@font-face {
+  font-family: Caveat-Regular;
+  src: url(/assets/fonts/Caveat-Regular.ttf);
+}
+@font-face {
+  font-family: Lato-Regular;
+  src: url(/assets/fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato-Italic;
+  src: url(/assets/fonts/Lato-Italic.ttf);
+}
+#app {
+  padding: 30px;
+  display: flex;
+  height: calc(100% - 100px);
+  align-items: center;
+  justify-content: center;
+}
+#app .circle-container {
+  width: 357px;
+  height: 357px;
+  /* background-color: cadetblue; */
+  position: relative;
+}
+#app .circle-container .small-circle {
+  width: 168px;
+  height: 168px;
+  background-color: #fcbcb8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: sans-serif;
+  position: absolute;
+  z-index: 1;
+  right: -50px;
+  top: -50px;
+  box-shadow: -5px 10px 10px 1px rgba(41, 41, 41, 0.5);
+}
+#app .circle-container .small-circle p {
+  width: 90px;
+  color: black;
+  font-family: Lato-Italic;
+  font-size: 10px;
+  text-align: center;
+  align-content: center;
+}
+#app .circle-container .yellow-circle {
+  width: 357px;
+  height: 357px;
+  background-color: #ffd972;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: sans-serif;
+  position: absolute;
+  z-index: 2;
+  box-shadow: -5px 10px 10px 1px rgba(41, 41, 41, 0.5);
+}
+#app .circle-container .yellow-circle .text-wrapper {
+  align-items: center;
+  justify-content: space-evenly;
+}
+#app .circle-container .yellow-circle .text-wrapper #title-text {
+  color: black;
+  font-family: Caveat-Bold;
+  font-size: 24px;
+}
+#app .circle-container .yellow-circle .text-wrapper p {
+  width: 130px;
+  color: black;
+  font-family: Lato-Regular;
+  font-size: 13px;
+  text-align: center;
+  align-content: center;
+}
+
+@font-face {
+  font-family: Lato-Italic;
+  src: url(/assets/fonts/Lato-Italic.ttf);
+}
+footer {
+  position: relative;
+  bottom: 50px;
+  height: 50px;
+  width: 100%;
+  font-family: Lato-Italic;
+  font-size: 15px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer #cr {
+  color: black;
+}
+footer .footer-links a {
+  text-decoration: none;
+  justify-content: space-between;
+  padding-right: 10px;
+  color: black;
+}
+footer .socials {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .socials #insta {
+  height: 25px;
+  width: 25px;
+}
+footer .socials #fb {
+  height: 25px;
+  width: 25px;
+}
+
+@font-face {
+  font-family: Caveat-Regular;
+  src: url(/assets/fonts/Caveat-Regular.ttf);
+}
+@font-face {
+  font-family: Lato-Black;
+  src: url(/assets/fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: Lato-Regular;
+  src: url(/assets/fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato-Italic;
+  src: url(/assets/fonts/Lato-Italic.ttf);
+}
+header {
+  background: #ffd972;
+  color: black;
+  padding: 0.5rem 0;
+  font-family: Caveat-Regular;
+}
+header button {
+  text-decoration: none;
+  color: black;
+  width: 100px;
+  height: 37px;
+  background: #ffd972;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+  font-family: Caveat-Regular;
+  box-shadow: -5px 10px 10px 1px rgba(37, 37, 37, 0.2);
+}
+
+#login-wrapper {
+  background-color: #ffd972;
+  display: inline-block;
+  width: 100%;
+  height: 650px;
+  display: flex;
+}
+#login-wrapper .logIn {
+  width: 100%;
+  margin-top: 180px;
+  padding-left: 230px;
+}
+#login-wrapper .logIn input {
+  height: 50px;
+  font-size: 14px;
+  padding-top: 30px;
+  width: 200px;
+  border: none;
+  border-bottom: solid;
+  border-width: 2px;
+  background-color: #ffd972;
+  color: black;
+  font-family: Lato-Regular;
+  font-size: 12px;
+}
+#login-wrapper .logIn .loginHere {
+  font-size: 30px;
+  font-family: Lato-Black;
+}
+#login-wrapper .logIn .loginBtn {
+  font-size: 15px;
+  margin-top: 40px;
+  padding-top: 5px;
+  background-color: #ffd972;
+  width: 209px;
+  height: 52px;
+  background: #ffd972;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-family: Caveat-Regular;
+  box-shadow: -5px 10px 10px 1px rgba(46, 46, 46, 0.5);
+  text-transform: uppercase;
+}
+#login-wrapper .signUp {
+  width: 100%;
+  padding-left: 230px;
+  display: inline-block;
+}
+#login-wrapper .signUp input {
+  height: 50px;
+  font-size: 14px;
+  padding-top: 30px;
+  width: 200px;
+  border: none;
+  border-bottom: solid;
+  border-width: 2px;
+  background-color: #ffd972;
+  color: black;
+  font-family: Lato-Regular;
+  font-size: 12px;
+}
+#login-wrapper .signUp .noAccount {
+  margin-top: 170px;
+  position: absolute;
+  font-family: Lato-Italic;
+  font-size: 12px;
+}
+#login-wrapper .signUp .signUpHere {
+  font-size: 30px;
+  padding-top: 190px;
+  font-family: Lato-Black;
+}
+#login-wrapper .signUp .signBtn {
+  font-size: 15px;
+  margin-top: 40px;
+  padding-top: 5px;
+  width: 209px;
+  height: 52px;
+  background: #ffd972;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-family: Caveat-Regular;
+  box-shadow: -5px 10px 10px 1px rgba(46, 46, 46, 0.5);
+  text-transform: uppercase;
+}

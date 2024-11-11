@@ -1,0 +1,165 @@
+@font-face {
+  font-family: Caveat-Regular;
+  src: url(/assets/fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato-Black;
+  src: url(/assets/fonts/Lato-Black.ttf);
+}
+
+@font-face {
+  font-family: Lato-Regular;
+  src: url(/assets/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato-Italic;
+  src: url(/assets/fonts/Lato-Italic.ttf);
+}
+
+header {
+  background: #ffd972;
+  color: black;
+  padding: 0.5rem 0;
+  font-family: Caveat-Regular;
+
+  button {
+    text-decoration: none;
+    color: black;
+    // text-transform: uppercase;
+    //   border-radius: 50%;
+    width: 100px;
+    height: 37px;
+    background: #ffd972;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+    font-family: Caveat-Regular;
+    box-shadow: -5px 10px 10px 1px rgba(37, 37, 37, 0.2);
+  }
+}
+
+#login-wrapper {
+  background-color: #ffd972;
+  display: inline-block;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  .logIn {
+    width: 100%;
+    margin-top: 180px;
+    padding-left: 230px;
+
+    input {
+      height: 50px;
+      font-size: 14px;
+      padding-top: 30px;
+      width: 200px;
+      border: none;
+      border-bottom: solid;
+      border-width: 2px;
+      background-color: #ffd972;
+      color: black;
+      font-family: Lato-Regular;
+      font-size: 12px;
+    }
+
+    .loginHere {
+      font-size: 30px;
+      font-family: Lato-Black;
+    }
+
+    .loginBtn {
+      font-size: 15px;
+      //   padding-left: 30px;
+      //   margin-left: 50px;
+      margin-top: 40px;
+      padding-top: 5px;
+      background-color: #ffd972;
+      width: 209px;
+      height: 52px;
+      background: #ffd972;
+      border-radius: 25px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 18px;
+      color: black;
+      text-align: center;
+      font-size: 25px;
+      font-family: Caveat-Regular;
+      box-shadow: -5px 10px 10px 1px rgba(46, 46, 46, 0.5);
+      text-transform: uppercase;
+    }
+  }
+  .signUp {
+    width: 100%;
+    padding-left: 230px;
+    display: inline-block;
+
+    input {
+      height: 50px;
+      font-size: 14px;
+      padding-top: 30px;
+      width: 200px;
+      border: none;
+      border-bottom: solid;
+      border-width: 2px;
+      background-color: #ffd972;
+      color: black;
+      //   color: black;
+      font-family: Lato-Regular;
+      font-size: 12px;
+    }
+    .noAccount {
+      margin-top: 170px;
+      position: absolute;
+      font-family: Lato-Italic;
+      font-size: 12px;
+    }
+
+    .signUpHere {
+      font-size: 30px;
+      padding-top: 190px;
+      font-family: Lato-Black;
+    }
+
+    // .fName {
+    // }
+
+    // .lName {
+    // }
+
+    // .signEmail {
+    // }
+
+    // .signpass {
+    // }
+
+    .signBtn {
+      font-size: 15px;
+      //   padding-left: 30px;
+      //   margin-left: 50px;
+      margin-top: 40px;
+      padding-top: 5px;
+      width: 209px;
+      height: 52px;
+      background: #ffd972;
+      border-radius: 25px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 18px;
+      color: black;
+      text-align: center;
+      font-size: 25px;
+      font-family: Caveat-Regular;
+      box-shadow: -5px 10px 10px 1px rgba(46, 46, 46, 0.5);
+      text-transform: uppercase;
+    }
+  }
+}

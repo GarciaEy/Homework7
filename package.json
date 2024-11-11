@@ -1,0 +1,40 @@
+{
+  "name": "homework7",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "braces": "^3.0.3",
+    "chokidar": "^4.0.1",
+    "detect-libc": "^1.0.3",
+    "fill-range": "^7.1.1",
+    "firebase": "^11.0.1",
+    "immutable": "^4.3.7",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "jquery": "^3.7.1",
+    "micromatch": "^4.0.8",
+    "node-addon-api": "^7.1.1",
+    "picomatch": "^2.3.1",
+    "readdirp": "^4.0.2",
+    "sass": "^1.80.6",
+    "source-map-js": "^1.2.1",
+    "to-regex-range": "^5.0.1"
+  },
+  "scripts": {
+    "serve": "live-server dist",
+    "build-webpack": "webpack",
+    "compile": "sass dist/scss/styles.scss dist/css/styles.css -w --no-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

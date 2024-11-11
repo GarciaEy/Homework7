@@ -1,0 +1,54 @@
+@font-face {
+  font-family: Lato-Italic;
+  src: url(/assets/fonts/Lato-Italic.ttf);
+}
+
+footer {
+  position: relative;
+  bottom: 50px;
+  //   background: blue;
+  height: 50px;
+  width: 100%;
+  font-family: Lato-Italic;
+  font-size: 15px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  #cr {
+    color: black;
+    // background-color: green;
+  }
+
+  .footer-links {
+    // background-color: purple;
+    a {
+      text-decoration: none;
+      justify-content: space-between;
+      padding-right: 10px;
+      color: black;
+      //   background-color: aqua;
+    }
+  }
+
+  .socials {
+    // background-color: red;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    // margin-left: 400px;
+
+    #insta {
+      height: 25px;
+      width: 25px;
+      //   padding-right: 25px;
+    }
+    #fb {
+      height: 25px;
+      width: 25px;
+      //   padding-right: 10px;
+    }
+  }
+}
